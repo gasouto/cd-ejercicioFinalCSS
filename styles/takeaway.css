@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-image: url("../images/comida.jpg");
+  height: 30vh;
+  border-bottom: 15px solid darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+header a {
+  text-decoration: none;
+}
+#header-div {
+  background-color: rgba(139, 0, 0, 0.5);
+  color: white;
+  padding: 20px 15px;
+  text-align: center;
+  line-height: 45px;
+  margin: 0 40px;
+}
+h1 {
+  text-transform: uppercase;
+}
+
+html {
+  background-color: #dbdacd;
+}
+#title_section {
+  color: darkred;
+  text-align: center;
+}
+.promociones {
+  background-color: white;
+  margin: 30px 50px 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.promocion {
+  background-color: #dbb789;
+  margin: 25px;
+  padding: 20px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  padding: 15px;
+}
+img {
+  max-width: 250px;
+  width: 75%;
+}
+.promocion:hover img {
+  transform: scale(1.1);
+}
+footer {
+  background-color: darkred;
+  height: 75px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    background-image: url("../images/header_media.jpg");
+  }
+  .promociones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url("../images/header_peque.png");
+  }
+  header h1,
+  h2 {
+    font-size: 20px;
+  }
+  .promociones {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
